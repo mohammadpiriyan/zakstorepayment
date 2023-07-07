@@ -7,10 +7,14 @@ const Payment = () => {
   const price = router.query.price;
 
   const handleSuccess = () => {
-    router.replace(`http://localhost:3000/payment/Success/${price}`);
+    router.replace(
+      `https://zakstore-mohammadpiriyan.vercel.app/payment/Success/${price}`
+    );
   };
   const handleCancel = () => {
-    router.replace(`http://localhost:3000/payment/Cancel/${price}`);
+    router.replace(
+      `https://zakstore-mohammadpiriyan.vercel.app/payment/Cancel/${price}`
+    );
   };
 
   return (
